@@ -1,4 +1,7 @@
 function	ChangeColor(){
-	document.getElementById("Div_Color").style.backgroundColor = "red";
-	alert("thanh cong");
+	var color = ["red", "blue", "black","pink","gray"];
+	var m=Math.floor((Math.random() * color.length) + 1);
+
+	document.getElementById("Div_Color").style.backgroundColor = color[m];
+	//alert(m);
 }
